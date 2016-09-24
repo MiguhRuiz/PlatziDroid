@@ -32,5 +32,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnSend"
         android:text="Enviar mi nombre :D"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:onClick="showName"/>
 </LinearLayout>

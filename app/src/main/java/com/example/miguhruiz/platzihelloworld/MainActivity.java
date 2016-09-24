@@ -8,6 +8,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void showName(View view) {
+        TextView nameIs = (EditText) findViewById(R.id.input);
+        String currentName = nameIs.getText().toString();
+        Toast.makeText(getBaseContext(), "Bienvenido " + currentName + "!", Toast.LENGTH_LONG).show();
     }
 
     @Override
